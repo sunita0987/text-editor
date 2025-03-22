@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT-EDITOR</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Editor</h1>
+        <div class="editor">
+            <p id="text">This is sample text.</p>
+    
+            <select id="color" onchange="updateStyle()">
+                <option value="">Select color</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="black">Black</option>
+            </select>
+    
+            <select id="fontSize" onchange="updateStyle()">
+                <option value="">Select font size</option>
+                <option value="16px">Small</option>
+                <option value="24px">Medium</option>
+                <option value="32px">Large</option>
+            </select>
+    
+            <select id="textAlign" onchange="updateStyle()">
+                <option value="">Select alignment</option>
+                <option value="left">Left</option>
+                <option value="center">Center</option>
+                <option value="right">Right</option>
+            </select>
+    
+            <select id="fontFamily" onchange="updateStyle()">
+                <option value="">Select font family</option>
+                <option value="Inter">Inter</option>
+                <option value="Poppins">Poppins</option>
+                <option value="Ubuntu">Ubuntu</option>
+            </select>
+    
+            <select id="textDecoration" onchange="updateStyle()">
+                <option value="">Select text decoration</option>
+                <option value="none">None</option>
+                <option value="underline">Underline</option>
+                <option value="line-through">Line Through</option>
+            </select>
+    
+            <select id="fontWeight" onchange="updateStyle()">
+                <option value="">Select font weight</option>
+                <option value="normal">Normal</option>
+                <option value="bold">Bold</option>
+                <option value="bolder">Bolder</option>
+            </select>
+        </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+    
+</body>
+</html>
